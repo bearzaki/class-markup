@@ -6,6 +6,7 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     line-height: 1.75;
     letter-spacing: 0;
+    background-color: #F7FAFF;
 }
 
 .inner {
@@ -15,7 +16,18 @@ body {
     margin-right: auto;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    padding: 40px 0;
+    background-color: #123D88;
+}
+
 h2 {
+    margin-bottom: 30px;
     color: #262934;
     font-size: 36px;
     font-weight: bold;
@@ -31,10 +43,40 @@ h3 {
 
 .quis {
     color: #fff;
+    background: url(./images/bg_mainvisual.png) no-repeat center / cover;
+}
+
+.quis .inner {
+    padding: 280px 0 160px;
+}
+
+.quis h2 {
+    color: #fff;
+}
+
+.quis .btn {
+    display: block;
+    width: 200px;
+    margin: 60px auto;
+    padding: 20px 40px;
+    background-color: #f87624;
 }
 
 .btn {
     color: #fff;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0.025em;
+}
+
+.doing .item {
+    padding: 60px 110px 75px;
+    background-color: #fff;
+}
+
+dl .item {
+    display: flex;
+    row-gap: 60px;
 }
 
 main small {
@@ -44,8 +86,14 @@ main small {
     letter-spacing: 0.05em;
 }
 
+footer {
+    background-color: #123D88;
+}
+
 footer small {
     color: #fff;
     font-size: 15px;
     line-height: 2.4;
 }
+
+@media (700px < width) {}
